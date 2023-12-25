@@ -4,7 +4,7 @@ import java.awt.event.*;
 import java.awt.*;
 import javax.swing.*;
 
-public class Quiz implements ActionListener{
+public  class Quiz implements ActionListener{
 	
 	
 	
@@ -17,7 +17,7 @@ public class Quiz implements ActionListener{
 							};
 	String[][] options = 	{
 								{"2","5","0","6"},
-								{"1","5","0","3"},
+								{"1","0","5","3"},
 								{"12","5","3","2"},
 								{"24","0","25","3"}
 							};
@@ -51,18 +51,19 @@ public class Quiz implements ActionListener{
 	JTextField number_right = new JTextField();
 	JTextField percentage = new JTextField();
 	
-	Timer timer = new Timer(1000, new ActionListener() {
+	
+		Timer timer = new Timer(1000, new ActionListener() {
 		
 	//	@Override
 		public void actionPerformed(ActionEvent e) {
 			seconds--;
-			seconds_left.setText(String.valueOf(seconds));
-			if(seconds<=0) {
-				displayAnswer();
-			}
-			}
+		seconds_left.setText(String.valueOf(seconds));
+	 if(seconds<=0) {
+			 displayAnswer();
+	}
+		}
 		});
-	
+		
 	public Quiz() {
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.setSize(650,650);
