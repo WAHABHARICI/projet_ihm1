@@ -6,15 +6,30 @@ import java.awt.event.ActionListener;
 
 public class Main implements ActionListener {
     static JButton buttonmath;
-    static JButton buttonarab ;
+    static JButton buttonGeography ;
     static JButton buttonphy;
-    static JButton buttonhi;
+    static JButton buttonhistory;
+    static JButton buttonscience;
+    static JButton buttonlanguages;
+    
     static JButton button_dif ;
     static JButton button_easy;
+    
     static JButton button_dif1 ;
     static JButton button_easy1;
+    
     static JButton button_dif2 ;
     static JButton button_easy2;
+    
+    static JButton button_dif3 ;
+    static JButton button_easy3;
+    
+    static JButton button_dif4 ;
+    static JButton button_easy4;
+    
+    static JButton button_dif5 ;
+    static JButton button_easy5;
+    
     public static void main(String[] args) {
         JFrame frame1 = new JFrame();
 
@@ -26,26 +41,37 @@ public class Main implements ActionListener {
         buttonmath = new JButton("Math");
         buttonmath.addActionListener(new Main());
         
-         buttonarab = new JButton("Arab");
-         buttonarab.addActionListener(new Main());
+         buttonGeography = new JButton("Geography");
+         buttonGeography.addActionListener(new Main());
          
          buttonphy = new JButton("Physics");
          buttonphy.addActionListener(new Main());
          
-         buttonhi = new JButton("History");
-         buttonhi.addActionListener(new Main());
+         buttonhistory = new JButton("History");
+         buttonhistory.addActionListener(new Main());
          
-
+         buttonscience = new JButton("Science");
+         buttonscience.addActionListener(new Main());
+         
+         
+         buttonlanguages = new JButton("Languages");
+         buttonlanguages.addActionListener(new Main());
+         
+         
         // Set bounds for the buttons
         buttonmath.setBounds(50, 50, 150, 30);
-        buttonarab.setBounds(50, 100, 150, 30);
+        buttonGeography.setBounds(50, 100, 150, 30);
         buttonphy.setBounds(50, 150, 150, 30);
-        buttonhi.setBounds(50, 200, 150, 30);
+        buttonhistory.setBounds(50, 200, 150, 30);
+        buttonscience.setBounds(50, 250, 150, 30);
+        buttonlanguages.setBounds(50, 300, 150, 30);
 
         frame1.add(buttonmath);
-        frame1.add(buttonarab);
+        frame1.add(buttonGeography);
         frame1.add(buttonphy);
-        frame1.add(buttonhi);
+        frame1.add(buttonhistory);
+        frame1.add(buttonscience);
+        frame1.add(buttonlanguages);
 
         frame1.setResizable(false);
         frame1.setVisible(true);
@@ -118,7 +144,7 @@ public class Main implements ActionListener {
            // Perform any additional actions related to the Quiz class
        }
        
-       if (e.getSource() == buttonarab) {
+       if (e.getSource() == buttonGeography) {
        	JFrame frame2 = new JFrame();
        	//JButton button_dif ;
           //JButton button_easy;
@@ -149,7 +175,107 @@ public class Main implements ActionListener {
        	Quiz2 quiz = new Quiz2();
         }
        
+		
+		
+		if (e.getSource() == buttonhistory) {
+        	JFrame frame2 = new JFrame();
+        	//JButton button_dif ;
+           //JButton button_easy;
+            button_dif3 = new JButton("diffuclt");
+            button_dif3.addActionListener(new Main());
+            button_easy3 = new JButton("easy");
+            button_easy3.addActionListener(new Main());
+            button_dif3.setBounds(50, 50, 150, 30);
+            button_easy3.setBounds(50, 100, 150, 30);
+            //frame2.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+            frame2.setSize(650, 650);
+            frame2.getContentPane().setBackground(new Color(50, 50, 50));
+            frame2.setLayout(null);
+            frame2.add(button_dif3);
+            frame2.add(button_easy3);
+        	frame2.setVisible(true);
+        	 
+        	
+        	
+        }
        
+		if  (e.getSource() == button_easy3) {
+        	History_easy quiz = new History_easy();
+    		
+         }
+        
+        
+		if  (e.getSource() == button_dif3) {
+        	History_dif quiz = new History_dif();
+         }
+		
+		
+		
+		
+		if (e.getSource() == buttonscience) {
+        	JFrame frame2 = new JFrame();
+        	//JButton button_dif ;
+           //JButton button_easy;
+            button_dif4 = new JButton("diffuclt");
+            button_dif4.addActionListener(new Main());
+            button_easy4 = new JButton("easy");
+            button_easy4.addActionListener(new Main());
+            button_dif4.setBounds(50, 50, 150, 30);
+            button_easy4.setBounds(50, 100, 150, 30);
+            //frame2.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+            frame2.setSize(650, 650);
+            frame2.getContentPane().setBackground(new Color(50, 50, 50));
+            frame2.setLayout(null);
+            frame2.add(button_dif4);
+            frame2.add(button_easy4);
+        	frame2.setVisible(true);
+        	 
+        	
+        	
+        }
+       
+		if  (e.getSource() == button_easy4) {
+        	Science_easy quiz = new Science_easy();
+    		
+         }
+        
+        
+		if  (e.getSource() == button_dif4) {
+			Science_diff quiz = new Science_diff();
+         }
+        
+		
+		if (e.getSource() == buttonlanguages) {
+        	JFrame frame2 = new JFrame();
+        	//JButton button_dif ;
+           //JButton button_easy;
+            button_dif5 = new JButton("diffuclt");
+            button_dif5.addActionListener(new Main());
+            button_easy5 = new JButton("easy");
+            button_easy5.addActionListener(new Main());
+            button_dif5.setBounds(50, 50, 150, 30);
+            button_easy5.setBounds(50, 100, 150, 30);
+            //frame2.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+            frame2.setSize(650, 650);
+            frame2.getContentPane().setBackground(new Color(50, 50, 50));
+            frame2.setLayout(null);
+            frame2.add(button_dif5);
+            frame2.add(button_easy5);
+        	frame2.setVisible(true);
+        	 
+        	
+        	
+        }
+       
+		if  (e.getSource() == button_easy5) {
+        	Languages_easy quiz = new Languages_easy();
+    		
+         }
+        
+        
+		if  (e.getSource() == button_dif4) {
+			Languages_dif quiz = new Languages_dif();
+         }
         
     
     

@@ -13,6 +13,7 @@ import javax.swing.JTextField;
 import javax.swing.Timer;
 
 public class Quiz2_easy implements ActionListener {
+                      // PHYSEQUE CLASSE EASY
 	String[] questions = 	{
 			"Why do objects fall to the ground when you drop them?",
 			"What makes a toy car go faster when you push it harder?",

@@ -11,7 +11,7 @@ import javax.swing.JLabel;
 import javax.swing.JTextArea;
 import javax.swing.JTextField;
 import javax.swing.Timer;
-
+                      // MATH CLASSE
 public class quiz1_easy implements ActionListener {
 	String[] questions = 	{
 			"what is 1+1 ?",

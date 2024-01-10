@@ -5,21 +5,21 @@ import java.awt.*;
 import javax.swing.*;
 
 public class Quiz3 implements ActionListener{
-	
+	//Geography CLASSE     
 	
 	
 	
 	String[] questions = 	{
-								"Which company created Java?",
-								"Which year was Java created?",
-								"What was Java originally called?",
-								"Who is credited with creating Java?"
+								"What is the capital of Algeria ?",
+								"Where is Algeria located ?",
+								"What is the capital of Palestine ? ",
+								"What is the most populated country in the world ?"
 							};
 	String[][] options = 	{
-								{"Sun Microsystems","Starbucks","Microsoft","Alphabet"},
-								{"1989","1996","1972","1492"},
-								{"Apple","Latte","Oak","Koffing"},
-								{"Steve Jobs","Bill Gates","James Gosling","Mark Zuckerburg"}
+								{"Algiers","Oran","Telemcen","Setif"},
+								{"Europe","Africa","Asia","America"},
+								{"Gaza","Jaffa","Jerusalem","Nabuls"},
+								{"India","Argentina","Chaina","Japan"}
 							};
 	char[] answers = 		{
 								'A',

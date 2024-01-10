@@ -12,28 +12,25 @@ import javax.swing.JTextArea;
 import javax.swing.JTextField;
 import javax.swing.Timer;
 
-public class Quiz3_easy  implements ActionListener{
-	//Geography 
-	
+public class History_easy implements ActionListener {
 	String[] questions = 	{
-			"What is the capital of Algeria ?",
-			"Where is Algeria located ?",
-			"What is the capital of Palestine ? ",
-			"What is the most populated country in the world ?"
+			"What is the duration of the French colonization in Algeria ?",
+			"What is the year of the first world war?",
+			"What is the year of Algeria's independence?",
+			"What was the name of Russia during the Cold War?"
 		};
 String[][] options = 	{
-			{"Algiers","Oran","Telemcen","Setif"},
-			{"Europe","Africa","Asia","America"},
-			{"Gaza","Jaffa","Jerusalem","Nabuls"},
-			{"India","Argentina","Chaina","Japan"}
+			{"132 years","102 years","151 years","55 years"},
+			{"1850","1914","1932","1999"},
+			{"1926","1962","2000","1956"},
+			{"Russia","non name ","Union of Soviet Socialist Republics","The People's Republic of Greater Siberia"}
 		};
 char[] answers = 		{
 			'A',
 			'B',
-			'C',
+			'B',
 			'C'
 		};
-
 char guess;
 char answer;
 int index;
@@ -58,11 +55,12 @@ JLabel seconds_left = new JLabel();
 JTextField number_right = new JTextField();
 JTextField percentage = new JTextField();
 
+
 Timer timer = new Timer(1000, new ActionListener() {
 
 //	@Override
 public void actionPerformed(ActionEvent e) {
-seconds--;
+//seconds--;
 seconds_left.setText(String.valueOf(seconds));
 if(seconds<=0) {
 displayAnswer();
@@ -70,7 +68,7 @@ displayAnswer();
 }
 });
 
-public Quiz3_easy() {
+public History_easy() {
 //frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 frame.setSize(650,650);
 frame.getContentPane().setBackground(new Color(50,50,50));
@@ -300,7 +298,5 @@ frame.add(number_right);
 frame.add(percentage);
 
 }
+
 }
-
-
-

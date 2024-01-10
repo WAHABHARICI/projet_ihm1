@@ -12,28 +12,25 @@ import javax.swing.JTextArea;
 import javax.swing.JTextField;
 import javax.swing.Timer;
 
-public class Quiz3_easy  implements ActionListener{
-	//Geography 
-	
+public class Science_easy implements ActionListener {
 	String[] questions = 	{
-			"What is the capital of Algeria ?",
-			"Where is Algeria located ?",
-			"What is the capital of Palestine ? ",
-			"What is the most populated country in the world ?"
+			"In the human body, which organ doesn't contain any bones?",
+			"On average, what percentage of the human body is water?",
+			"Is the elephant oviparous (egg-laying) or viviparous (live bearing) ?",
+			"Why are leaves green?"
 		};
 String[][] options = 	{
-			{"Algiers","Oran","Telemcen","Setif"},
-			{"Europe","Africa","Asia","America"},
-			{"Gaza","Jaffa","Jerusalem","Nabuls"},
-			{"India","Argentina","Chaina","Japan"}
+			{"The hand","the tongue","the nose","the face"},
+			{"20%","50%","60%","3%"},
+			{"oviparous","viviparous","no one ","fly"},
+			{"Because they love spring, and spring's favorite color is green","To camouflage themselves from sneaky squirrels who love a leafy snack!","no one ","To camouflage themselves from sneaky squirrels who love a leafy snack!"}
 		};
 char[] answers = 		{
-			'A',
+			'B',
 			'B',
 			'C',
-			'C'
+			'D'
 		};
-
 char guess;
 char answer;
 int index;
@@ -58,11 +55,12 @@ JLabel seconds_left = new JLabel();
 JTextField number_right = new JTextField();
 JTextField percentage = new JTextField();
 
+
 Timer timer = new Timer(1000, new ActionListener() {
 
 //	@Override
 public void actionPerformed(ActionEvent e) {
-seconds--;
+//seconds--;
 seconds_left.setText(String.valueOf(seconds));
 if(seconds<=0) {
 displayAnswer();
@@ -70,7 +68,7 @@ displayAnswer();
 }
 });
 
-public Quiz3_easy() {
+public Science_easy() {
 //frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 frame.setSize(650,650);
 frame.getContentPane().setBackground(new Color(50,50,50));
@@ -301,6 +299,5 @@ frame.add(percentage);
 
 }
 }
-
 
 

@@ -1,31 +1,41 @@
 package application;
-import java.awt.event.*;
 
-import java.awt.*;
-import javax.swing.*;
-                      // MATH CALASSE
-public  class Quiz implements ActionListener{
+import java.awt.Color;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import javax.swing.BorderFactory;
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JTextArea;
+import javax.swing.JTextField;
+import javax.swing.Timer;
+
+public class Languages_dif implements ActionListener {
+
+	
 	
 	
 	
 	
 	String[] questions = 	{
-								"what is 1+1 ?",
-								"what is 1*0 ?",
-								"what is 1+1*2  ?",
-								"what is 5*5?"
+								"in winter we :",
+								"What is the antonym of huge",
+								"The auther of a book is the one who ?",
+								"What is the synonyme of ANGRY ?"
 							};
 	String[][] options = 	{
-								{"2","5","0","6"},
-								{"1","0","5","3"},
-								{"12","5","3","2"},
-								{"24","0","25","3"}
+								{"go to the beach" ,"play with snow", "eat ice-cream","run"},
+								{"Very big","gaint","tiny","awsome"},
+								{"writes the book","sells the book","Reads the book","sleep"},
+								{"Furious" ,"happy", "sad","big"}
 							};
 	char[] answers = 		{
-								'A',
 								'B',
 								'C',
-								'C'
+								'C',
+								'A'
 							};
 	char guess;
 	char answer;
@@ -64,7 +74,7 @@ public  class Quiz implements ActionListener{
 		}
 		});
 		
-	public Quiz() {
+	public Languages_dif() {
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.setSize(650,650);
 		frame.getContentPane().setBackground(new Color(50,50,50));
@@ -294,4 +304,14 @@ public  class Quiz implements ActionListener{
 		frame.add(percentage);
 		
 	}
+
+
+
 }
+
+
+
+
+
+
+

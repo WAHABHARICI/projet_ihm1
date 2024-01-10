@@ -5,7 +5,7 @@ import java.awt.*;
 import javax.swing.*;
 
 public class Quiz1 implements ActionListener{
-	
+	                             //PHYSEQUE CLASSE
 	
 	
 	
